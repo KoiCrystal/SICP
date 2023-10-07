@@ -15,6 +15,7 @@ int good_enough(float guess,float x)
 }
 float improve(float guess, float x)
 {
+    cout.setf(ios::fixed,ios::floatfield);
 	cout<<guess<<endl;
     return (guess+x/guess)/2;
 }
