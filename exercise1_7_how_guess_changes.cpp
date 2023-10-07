@@ -19,8 +19,7 @@ int good_enough(float guess,float x)
 float improve(float guess, float x)
 {
     cout.setf(ios::fixed,ios::floatfield);
-    cout<<guess<<endl;
-    cout<<j<<endl;
+    cout<<j<<"times: "<<guess<<endl;
     return (guess+x/guess)/2;
 }
 float sqrt_iter(float guess,float x)
@@ -65,8 +64,7 @@ int good_enough(double guess,double x)
 double improve(double guess, double x)
 {
     cout.setf(ios::fixed,ios::floatfield);
-    cout<<guess<<endl;
-    cout<<j<<endl;
+    cout<<j<<"times: "<<guess<<endl;
     return (guess+x/guess)/2;
 }
 double sqrt_iter(double guess,double x)
