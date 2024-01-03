@@ -1,6 +1,6 @@
 #lang scheme
-(define (even? n)
-  (= (remainder n 2) 0))
+(define (even? x)
+  (= (remainder x 2) 0))
 
 
 (define (fast-expt-iter b n a)
