@@ -1,6 +1,6 @@
 #lang scheme
 (define (sum term a next b)
-  (define (iter a result)
+  (define (iter a result)    ;outer 'a' and inner 'a' dont interact each other
     (if (> a b)
         result
         (iter (next a) (+ result (term a)))
