@@ -3,7 +3,7 @@
   (if (> a b)
       null-value
       (if (filter a)
-          (+ (term a) (filtered-accumulate combiner null-value term (next a) next b filter))
+          (combiner (term a) (filtered-accumulate combiner null-value term (next a) next b filter))
           (filtered-accumulate combiner null-value term (next a) next b filter))))
 
 (define (small-divisor n)
