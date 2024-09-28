@@ -17,6 +17,8 @@
     (try guess) 
 ))
 |#
+
+; this is for sqrt
 (define (average x y)
   (/ (+ x y) 2))
 (define (square x first-guess)
@@ -30,7 +32,7 @@
 
 
 
-; this is fixed-point
+; this is for fixed-point
 #|
 (define tolerance 0.00001)
 (define (average-damp f)
