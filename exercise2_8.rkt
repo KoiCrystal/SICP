@@ -1,0 +1,11 @@
+#lang scheme
+(define (make-interval x y)
+  (cons x y))
+(define (lower-bound interval) (car interval))
+(define (upper-bound interval) (cdr interval))
+(define (sub-interval x y)
+  (make-interval (- (lower-bound x) (lower-bound y))
+                 (- (upper-bound x) (upper-bound y))))
+(define i1 (make-interval 3 4))
+(define i2 (make-interval 5 5))
+(sub-interval i1 i2)
