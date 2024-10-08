@@ -6,6 +6,6 @@
 (define (sub-interval x y)
   (make-interval (- (lower-bound x) (lower-bound y))
                  (- (upper-bound x) (upper-bound y))))
-(define i1 (make-interval 3 4))
-(define i2 (make-interval 5 5))
+(define i1 (make-interval 3 5))
+(define i2 (make-interval 6 7))
 (sub-interval i1 i2)
