@@ -12,13 +12,7 @@
 (define (last-pair l)
   (list-ref l (- (length l) 1)))
 
-(define (append list1 list2)
-  (if (null? list1)
-      list2
-      (cons (car list1) (append (cdr list1) list2))))
 
-(define odds (list 1 3 5 7))
-(define squares (list 4 9 16))
 
 (define (reverse l)
   (define (rev n)
