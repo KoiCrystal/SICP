@@ -10,6 +10,8 @@
           (accumulate op initial (cdr sequence)))))
 
 ; lambda (sub-tree) caculates num of leaves of every node
+; why (null? sub-tree) is needed in 2.2.2 but not here
+; because the last node 'null' is neglected in 'map'
 (define (count-leaves t)
   (accumulate + 0 (map (lambda (sub-tree) (cond ((not (pair? sub-tree)) 1)
                                                 (else (count-leaves sub-tree)))) 
