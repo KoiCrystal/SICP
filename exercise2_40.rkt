@@ -40,14 +40,6 @@
       null
       (cons low (enumerate-interval (+ low 1) high))))
 
-(define (permutations s)
-  (if (null? s)                    ; empty set?
-      (list null)                   ; sequence containing empty set
-      (flatmap (lambda (x)
-                 (map (lambda (p) (cons x p))
-                      (permutations (remove x s))))
-               s)))
-
 (define (unique-pairs n)
         (flatmap (lambda (i)
                          (map (lambda (j)
